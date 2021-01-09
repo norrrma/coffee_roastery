@@ -13,12 +13,11 @@ body {
 }
 
 .header {
-  height: 95vh;
+  height: 75vh;
   background-image: url(/img/FEND-Coffee-latte-art-3.jpg);
   background-size: cover;
   background-position: center;
   position: relative;
-  height: 500px;
   left: 0px;
   top: 0px;
 }
@@ -72,6 +71,10 @@ body {
   font-size: 14px;
   display: inline-block;
   line-height: 18px;
+  position: absolute;
+  bottom: 3.5rem;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 
 .btn-dark {
