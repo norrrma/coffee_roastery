@@ -1,0 +1,92 @@
+body {
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: $color-black;
+}
+
+.img-main {
+  width: 100vw;
+}
+
+.header {
+  height: 75vh;
+  background-image: url(/img/FEND-Coffee-latte-art-3.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  left: 0px;
+  top: 0px;
+
+  &_logo-box {
+    position: absolute;
+    left: 24px;
+    top: 10px;
+  }
+
+  &_logo {
+    height: 35px;
+    border-radius: 0px;
+  }
+
+  &_text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+}
+
+.heading-primary {
+  color: $color-white;
+
+  &-main {
+    display: block;
+    font-style: normal;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 75px;
+    text-align: center;
+  }
+
+  &-sub {
+    display: block;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+  }
+}
+
+.btn {
+  &:link,
+  &:visited {
+    text-decoration: none;
+    padding: 15px 50px;
+    color: $color-white;
+    font-size: 14px;
+    display: inline-block;
+    line-height: 18px;
+    position: absolute;
+    bottom: 3.5rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  &-dark {
+    background: $color-anthrazit;
+    border: 2px solid #1a1a1a;
+    box-sizing: border-box;
+    border-radius: 5px;
+  }
+
+  &-white-frame {
+    background: $color-anthrazit;
+    border: 2px solid white;
+    box-sizing: border-box;
+    border-radius: 5px;
+  }
+}
