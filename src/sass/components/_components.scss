@@ -23,13 +23,6 @@
     box-sizing: border-box;
     border-radius: 5px;
   }
-
-  &-white-frame {
-    background: $color-anthrazit;
-    border: 2px solid white;
-    box-sizing: border-box;
-    border-radius: 5px;
-  }
 }
 
 .container-1 {
@@ -45,6 +38,8 @@
 
 .img-cafe {
   width: 70%;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 .bio_roesterei {
@@ -58,5 +53,72 @@
     p {
       flex-grow: 1;
     }
+  }
+}
+.text-link {
+  text-decoration: none;
+}
+
+.container-2 {
+  background: $color-anthrazit;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  .coffee-types {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    padding: 5%;
+  }
+
+  .Costa_Rica {
+    margin: 2%;
+  }
+  .img-costa-rica {
+    margin-top: 5%;
+    width: 100%;
+    height: auto;
+  }
+
+  h2 {
+    color: $color-white;
+    padding-bottom: 10%;
+    padding-left: 5%;
+  }
+
+  p {
+    color: $color-white;
+    font-size: 18px;
+  }
+
+  .preis {
+    color: $color-medium-grey;
+    padding-bottom: 2%;
+    font-size: 14px;
+  }
+
+  .icons {
+    margin-bottom: 20%;
+  }
+}
+
+.btn-products {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  padding-bottom: 20%;
+
+  &-white {
+    text-decoration: none;
+    padding: 15px 50px;
+    background: $color-anthrazit;
+    border: 3px solid $color-white;
+    color: $color-white;
+    box-sizing: border-box;
+    border-radius: 5px;
+    bottom: 3.5rem;
   }
 }
