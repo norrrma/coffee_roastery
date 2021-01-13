@@ -76,6 +76,7 @@
   .Costa_Rica {
     margin: 2%;
   }
+
   .img-costa-rica {
     margin-top: 5%;
     width: 100%;
@@ -121,4 +122,70 @@
     border-radius: 5px;
     bottom: 3.5rem;
   }
+}
+
+.Herkunft {
+  background-image: url(/img/FEND-Coffee-bags-2.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 375px;
+  height: 332px;
+
+  &-text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: $color-white;
+    padding: 15%;
+  }
+
+  p {
+    padding: 4%;
+  }
+
+  a {
+    text-decoration: none;
+    color: $color-white;
+  }
+}
+
+.container-3 {
+  background: $color-white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: wrap;
+  padding: 5%;
+}
+
+.icons-inhalte {
+  display: flex;
+  flex-direction: row;
+}
+
+.btn-zum-shop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  padding: 10%;
+
+  &-schwarz {
+    text-decoration: none;
+    padding: 15px 50px;
+    background: $color-anthrazit;
+    border: none;
+    color: $color-white;
+    box-sizing: border-box;
+    border-radius: 5px;
+    bottom: 3.5rem;
+  }
+}
+
+.icons-inhalte {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10%;
 }
