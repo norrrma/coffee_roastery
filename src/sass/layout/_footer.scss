@@ -1,0 +1,46 @@
+.footer {
+  background-color: $color-anthrazit;
+  color: $color-white;
+  padding: 7%;
+
+  &__logo-box {
+    text-align: left;
+    margin: 7% 0 5%;
+  }
+
+  &__logo {
+    height: auto;
+  }
+  &__text-box {
+    margin-bottom: 10%;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10%;
+
+    &_left {
+      margin-right: 31%;
+    }
+  }
+
+  &__item {
+    display: block;
+  }
+}
+
+a {
+  &:link,
+  &:visited {
+    color: $color-white;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 400;
+    font-size: 14px;
+  }
+  &:hover,
+  &:active {
+    color: $color-white;
+  }
+}

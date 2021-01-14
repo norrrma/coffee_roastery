@@ -124,11 +124,11 @@
   }
 }
 
-.Herkunft {
+.herkunft {
   background-image: url(/img/FEND-Coffee-bags-2.jpg);
   background-size: cover;
   background-position: center;
-  width: 375px;
+  width: auto;
   height: 332px;
 
   &-text-box {
@@ -152,10 +152,7 @@
 
 .container-3 {
   background: $color-white;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  flex: wrap;
+  display: block;
   padding: 5%;
 }
 
@@ -181,6 +178,11 @@
     border-radius: 5px;
     bottom: 3.5rem;
   }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .icons-inhalte {
@@ -188,4 +190,11 @@
   flex-direction: row;
   justify-content: space-between;
   padding: 10%;
+}
+
+.container-4 {
+  background: $color-white;
+  display: block;
+  padding: 5%;
+  margin-bottom: -2%;
 }
