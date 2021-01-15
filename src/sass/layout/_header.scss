@@ -4,18 +4,18 @@
   background-size: cover;
   background-position: center;
   position: relative;
-  left: 0px;
-  top: 0px;
+  left: 0rem;
+  top: 0rem;
 
   &_logo-box {
     position: absolute;
-    left: 24px;
-    top: 10px;
+    left: 2.4rem;
+    top: 1rem;
   }
 
   &_logo {
-    height: 35px;
-    border-radius: 0px;
+    height: 3.5rem;
+    border-radius: 0rem;
   }
 
   &_text-box {

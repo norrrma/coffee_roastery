@@ -8,6 +8,43 @@
 //$media-lg: 992px;
 //$media-xl: 1200px;
 //$media-xxl: 1920px;
+
+//1em = 16px
+
+// $breakpoint arguement choices:
+@mixin respond($breakpoint) {
+  @if $breakpoint ==sm {
+    @media (min-width: 36em) {
+      //576px
+      @content;
+    }
+  }
+  @if $breakpoint ==md {
+    @media (min-width: 48em) {
+      //768px
+      @content;
+    }
+  }
+  @if $breakpoint ==lg {
+    @media (min-width: 62em) {
+      //992px
+      @content;
+    }
+  }
+  @if $breakpoint ==xl {
+    @media (min-width: 75em) {
+      //1200px
+      @content;
+    }
+  }
+  @if $breakpoint ==xxl {
+    @media (min-width: 120em) {
+      //1920px
+      @content;
+    }
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -20,8 +57,11 @@
   }
 }
 
-//html // This defines what 1rem is {font-size: 62,5%;}
-// html {font-size: 10px;}
+//html // This defines what 1rem is {font-size: 62,5%--> 10px; 100%-->16Px}
+
+html {
+  font-size: 62.5%;
+}
 
 body {
   box-sizing: border-box;
