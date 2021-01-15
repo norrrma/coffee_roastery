@@ -148,6 +148,9 @@
   background-image: url(/img/FEND-Coffee-bags-2.jpg);
   background-size: cover;
   background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: auto;
   height: 33.2rem;
   height: 50vh;
@@ -156,11 +159,7 @@
     display: block;
     text-align: center;
     color: $color-white;
-    padding: 15%;
-  }
-
-  p {
-    padding: 4%;
+    width: 30rem;
   }
 
   a {
