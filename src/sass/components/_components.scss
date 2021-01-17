@@ -37,6 +37,14 @@
   &-1 {
     @include respond(md) {
       display: flex;
+      margin-bottom: 5rem;
+    }
+  }
+
+  &-2 {
+    @include respond(md) {
+      display: flex;
+      flex-direction: row-reverse;
     }
   }
 }
@@ -74,7 +82,28 @@
       flex: 1;
     }
   }
+  @include respond(md) {
+    margin-right: 5rem;
+  }
 }
+
+.bioundfair {
+  flex: 1;
+  @include respond(md) {
+    margin-top: 1rem;
+    margin-left: 5rem;
+    margin-right: 3rem;
+  }
+}
+
+.coffee-beans {
+  display: flex;
+
+  @include respond(md) {
+    flex: 1;
+  }
+}
+
 .text-link {
   text-decoration: none;
 }
@@ -93,8 +122,12 @@
     padding: 0 5% 5% 5%;
   }
 
-  .Costa_Rica {
+  .costa_rica {
     margin: 2%;
+
+    @include respond(md) {
+      flex: 1;
+    }
   }
 
   .img-costa-rica {
@@ -129,8 +162,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-grow: 1;
-  padding-bottom: 20%;
+  padding-bottom: 10%;
+
+  @include respond(md) {
+    margin-top: 5%;
+  }
 
   &-white {
     text-decoration: none;
@@ -174,6 +210,9 @@
   padding: 5%;
   text-align: center;
 
+  @include respond(md) {
+  }
+
   h2 {
     padding: 4.5rem 0 4rem 0;
   }
@@ -182,6 +221,27 @@
 .icons-inhalte {
   display: flex;
   flex-direction: row;
+
+  @include respond(md) {
+    flex-direction: column;
+    flex: 1;
+  }
+}
+
+.inhalte-flex {
+  @include respond(md) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.img-costa-rica2 {
+  width: 100%;
+  height: auto;
+
+  @include respond(md) {
+    flex: 1;
+  }
 }
 
 .btn-zum-shop {
@@ -219,12 +279,15 @@
   background: $color-white;
   display: block;
   padding: 5%;
-  margin-bottom: 1rem;
 }
 
 .map {
-  display: block;
   border: none;
   width: 100%;
   height: auto;
+
+  &-iframe {
+    display: block;
+    width: 100%;
+  }
 }

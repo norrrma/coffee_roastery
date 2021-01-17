@@ -1,18 +1,27 @@
 .footer {
+  height: 50vh;
   background-color: $color-anthrazit;
   color: $color-white;
-  padding: 7%;
+  padding: 5%;
+
+  @include respond(md) {
+  }
 
   &__logo-box {
     text-align: left;
-    margin: 7% 0 5%;
+    margin: 2rem 0 1rem 0;
   }
 
   &__logo {
     height: auto;
   }
+
   &__text-box {
-    margin-bottom: 10%;
+    margin-bottom: 3rem;
+
+    @include respond(md) {
+      flex: 1;
+    }
   }
 
   &__list {
@@ -20,8 +29,18 @@
     flex-direction: row;
     margin-top: 10%;
 
+    @include respond(md) {
+      flex-direction: row-reverse;
+      flex: 2;
+      margin-top: 0;
+    }
+
     &_left {
-      margin-right: 31%;
+      flex: 1;
+    }
+
+    &_right {
+      flex: 1;
     }
   }
 
@@ -42,5 +61,38 @@ a {
   &:hover,
   &:active {
     color: $color-white;
+  }
+}
+
+.bio_roesterei_adresse_footer {
+  display: flex;
+  flex-direction: row;
+  p {
+    flex: 1;
+  }
+
+  @include respond(md) {
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    p {
+      flex: 0;
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+.md_flex_1 {
+  @include respond(md) {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+  }
+}
+
+.footer__rustica {
+  @include respond(md) {
+    flex: 1;
+    display: flex;
   }
 }
