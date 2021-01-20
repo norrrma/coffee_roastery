@@ -6,6 +6,11 @@
   position: relative;
   left: 0rem;
   top: 0rem;
+  width: 100%;
+
+  @include respond(md) {
+    background-image: url(/img/FEND-Coffee-latte-art-3_big.jpg);
+  }
 
   &_logo-box {
     position: absolute;

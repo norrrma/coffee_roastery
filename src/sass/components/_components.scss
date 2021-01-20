@@ -133,6 +133,10 @@
   .img-costa-rica {
     width: 100%;
     height: auto;
+
+    @include respond(md) {
+      content: url("/img/FEND_Coffee_Costa-Rica 2_bigger.jpg");
+    }
   }
 
   h2 {
@@ -241,6 +245,7 @@
 
   @include respond(md) {
     flex: 1;
+    content: url("/img/FEND_Coffee_Costa-Rica 2_bigger.jpg");
   }
 }
 
@@ -289,5 +294,9 @@
   &-iframe {
     display: block;
     width: 100%;
+
+    @include respond(md) {
+      height: 50vh;
+    }
   }
 }
