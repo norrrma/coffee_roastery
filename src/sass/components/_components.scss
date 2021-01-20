@@ -195,6 +195,10 @@
   height: 33.2rem;
   height: 50vh;
 
+  @include respond(md) {
+    background-image: url(/img/FEND-Coffee-bags-2_big.jpg);
+  }
+
   &-text-box {
     display: block;
     text-align: center;
@@ -215,6 +219,8 @@
   text-align: center;
 
   @include respond(md) {
+    //p {
+    //text-align: left;
   }
 
   h2 {
@@ -225,10 +231,19 @@
 .icons-inhalte {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  padding: 10%;
 
   @include respond(md) {
     flex-direction: column;
+    text-align: left;
     flex: 1;
+
+    &-123 {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
   }
 }
 
@@ -240,12 +255,12 @@
 }
 
 .img-costa-rica2 {
-  width: 100%;
+  width: 80%;
   height: auto;
 
   @include respond(md) {
     flex: 1;
-    content: url("/img/FEND_Coffee_Costa-Rica 2_bigger.jpg");
+    width: 100%;
   }
 }
 
@@ -271,13 +286,6 @@
     width: 100%;
     height: auto;
   }
-}
-
-.icons-inhalte {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 10%;
 }
 
 .container-4 {
