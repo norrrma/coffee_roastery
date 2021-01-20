@@ -35,5 +35,33 @@
   .nav-mobile {
     display: flex;
     justify-content: space-between;
+
+    @include respond(md) {
+      display: none;
+    }
+  }
+
+  .nav-desktop {
+    display: none;
+
+    @include respond(md) {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    &-ul {
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+      border: 1rem;
+    }
+
+    &-li {
+      flex: 2 1 1;
+    }
+
+    a {
+      padding: 1.5rem 3.5rem;
+    }
   }
 }
