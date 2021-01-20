@@ -110,9 +110,6 @@
 
 .container-2 {
   background: $color-anthrazit;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
 
   .coffee-types {
     display: flex;
@@ -159,18 +156,16 @@
 
   .icons_costa_rica {
     margin-bottom: 1rem;
+    flex: 1;
   }
 }
 
 .btn-products {
   display: flex;
+  align-items: flex-end;
   justify-content: center;
-  align-items: center;
-  padding-bottom: 10%;
 
-  @include respond(md) {
-    margin-top: 5%;
-  }
+  padding: 5% 0;
 
   &-white {
     text-decoration: none;
@@ -218,11 +213,6 @@
   padding: 5%;
   text-align: center;
 
-  @include respond(md) {
-    //p {
-    //text-align: left;
-  }
-
   h2 {
     padding: 4.5rem 0 4rem 0;
   }
@@ -255,7 +245,7 @@
 }
 
 .img-costa-rica2 {
-  width: 80%;
+  width: 70%;
   height: auto;
 
   @include respond(md) {
@@ -269,7 +259,7 @@
   justify-content: center;
   align-items: center;
   flex-grow: 1;
-  padding: 10%;
+  padding: 2rem;
 
   &-schwarz {
     text-decoration: none;
