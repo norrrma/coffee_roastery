@@ -1,6 +1,6 @@
-.header {
-  height: 75vh;
-  background-image: url(/img/FEND-Coffee-latte-art-3.jpg);
+.header-cafe {
+  height: 50vh;
+  background-image: url(/img/FEND-Coffee-shop.jpg);
   background-size: cover;
   background-position: center;
   position: relative;
@@ -63,22 +63,23 @@
 
     &-li {
       flex: 2 1 1;
-      a {
-        padding: 1.5rem 3.5rem;
-        display: inline-block;
+    }
 
-        &:after {
-          content: "";
-          width: 50%;
-          height: 1px;
-          display: block;
-          background: $color-white;
-          transition: 300ms;
-        }
+    a {
+      padding: 1.5rem 3.5rem;
+      display: inline-block;
 
-        &:hover::after {
-          width: 100%;
-        }
+      &:after {
+        content: "";
+        width: 50%;
+        height: 1px;
+        display: block;
+        background: $color-white;
+        transition: 300ms;
+      }
+
+      &:hover::after {
+        width: 100%;
       }
     }
   }
