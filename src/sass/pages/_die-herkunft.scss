@@ -16,3 +16,58 @@
       url(/img/FEND-Coffee-beans-hand-2.jpg);
   }
 }
+
+.coffee-plant2 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.img-coffee-plant2 {
+  width: 24rem;
+  height: auto;
+  margin: 2rem 2rem 2rem 0;
+
+  @include respond(md) {
+    width: 717px;
+    height: 476px;
+  }
+}
+
+.container--herkunft {
+  width: 36.5rem;
+  padding: 5%;
+
+  h2 {
+    padding: 2rem 0 2rem 0;
+    width: 27rem;
+  }
+
+  h3 {
+    padding-bottom: 2rem;
+  }
+}
+
+.img-coffee-worker {
+  width: 24rem;
+  height: auto;
+  margin: 5%;
+
+  @include respond(md) {
+    width: 508px;
+    height: 675px;
+  }
+}
+
+.video {
+  padding: 5%;
+
+  &--herkunft {
+    width: 327px;
+    height: 184px;
+
+    @include respond(xl) {
+      width: 1241px;
+      height: 698px;
+    }
+  }
+}
