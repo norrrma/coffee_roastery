@@ -1,0 +1,21 @@
+.header--impressum {
+  height: 30vh;
+  background: $color-white;
+
+  @include respond(md) {
+    background: $color-white;
+  }
+}
+
+.container__impressum {
+  padding: 5%;
+  margin-top: 8rem;
+
+  h2 {
+    margin-top: 2rem;
+  }
+
+  h3 {
+    padding: 2rem 0 2rem 0;
+  }
+}
