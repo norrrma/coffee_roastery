@@ -47,3 +47,22 @@
     }
   }
 }
+
+.image--gallery {
+  display: flex;
+  padding: 5%;
+  width: 100%;
+
+  img {
+    margin-bottom: 5%;
+    width: 100%;
+  }
+
+  div {
+    flex: 1;
+    margin-right: 5%;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
