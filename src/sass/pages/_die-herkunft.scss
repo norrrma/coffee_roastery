@@ -28,14 +28,21 @@
   margin: 2rem 2rem 2rem 0;
 
   @include respond(md) {
-    width: 717px;
-    height: 476px;
+    width: 72rem;
+    height: 48rem;
   }
 }
 
 .container--herkunft {
   width: 36.5rem;
   padding: 5%;
+
+  &-1 {
+    @include respond(lg) {
+      margin-left: 20rem;
+      width: 60rem;
+    }
+  }
 
   h2 {
     padding: 2rem 0 2rem 0;
@@ -53,8 +60,8 @@
   margin: 5%;
 
   @include respond(md) {
-    width: 508px;
-    height: 675px;
+    width: 51rem;
+    height: 68rem;
   }
 }
 
@@ -62,12 +69,19 @@
   padding: 5%;
 
   &--herkunft {
-    width: 327px;
-    height: 184px;
+    width: 33rem;
+    height: 18rem;
+
+    @include respond(lg) {
+      margin-left: 20rem;
+      width: 66rem;
+      height: auto;
+    }
 
     @include respond(xl) {
-      width: 1241px;
-      height: 698px;
+      margin-left: 10rem;
+      width: 100rem;
+      height: auto;
     }
   }
 }
