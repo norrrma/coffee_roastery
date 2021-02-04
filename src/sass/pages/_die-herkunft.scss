@@ -38,15 +38,23 @@
   padding: 5%;
 
   &-1 {
+    padding: 5%;
+
+    h2 {
+      padding: 2rem 0 2rem 0;
+      width: 27rem;
+
+      @include respond(md) {
+        width: auto;
+      }
+    }
+  }
+
+  &-1 {
     @include respond(lg) {
       margin-left: 20rem;
       width: 60rem;
     }
-  }
-
-  h2 {
-    padding: 2rem 0 2rem 0;
-    width: 27rem;
   }
 
   h3 {
