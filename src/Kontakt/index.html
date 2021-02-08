@@ -12,7 +12,7 @@
     <title>Impressum</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header header--kontakt">
       <nav class="nav-mobile">
         <div class="header_logo-box">
           <img src="/img/Group_Logo_black.svg" alt="Logo" class="header_logo" />
@@ -40,6 +40,81 @@
         </ul>
       </nav>
     </header>
+    <main>
+      <h2>Du hast Fragen? Schreib uns gern!</h2>
+      <div class="Kontaktformular">
+        <form action="#" class="form" method="post">
+          <div class="form__group">
+            <label for="name" class="form__label">Name*</label>
+            <input
+              type="text"
+              class="form__input"
+              placeholder="Name"
+              id="name"
+              required
+            />
+          </div>
+
+          <div class="form__group">
+            <label for="email" class="form__label">E-Mail*</label>
+            <input
+              type="email"
+              class="form__input"
+              placeholder="E-Mail"
+              id="email"
+              required
+            />
+          </div>
+
+          <div class="form__group">
+            <label for="telephone" class="form__label">Telefonnummer</label>
+            <input
+              type="number"
+              class="form__input"
+              placeholder="Telefonnummer"
+              id="telephone"
+            />
+          </div>
+
+          <div class="form__group">
+            <!-- <label for="betreff-select" class="form__label">Dein Betreff</label> -->
+            <select name="betreff" id="betreff-select">
+              <option value="Betreff">Dein Betreff</option>
+              <option value="Lieferung">Fragen zur Lieferung</option>
+              <option value="Produkt">Fragen zum Produkt</option>
+              <option value="Vertrieb">Vertriebsfragen</option>
+              <option value="nur_so">einfach nur so!</option>
+            </select>
+          </div>
+
+          <div class="form__group">
+            <label for="message" class="form__label">Deine Nachricht</label>
+            <input
+              type="text"
+              class="form__input"
+              placeholder="Was hast du auf dem Herzen?"
+              id="message"
+            />
+          </div>
+
+          <div class="form__group">
+            <input
+              type="checkbox"
+              class="form__input"
+              placeholder="Telefonnummer"
+              id="privacy"
+            />
+            <label for="privacy" class="form__label"
+              >Ich akzeptiere die Datenschutzerklärung</label
+            >
+          </div>
+
+          <div class="form__group">
+            <input type="submit" value="abschicken" />
+          </div>
+        </form>
+      </div>
+    </main>
 
     <footer class="footer">
       <div class="footer__logo-box">
