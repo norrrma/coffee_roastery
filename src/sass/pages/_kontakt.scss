@@ -27,7 +27,7 @@ h2 {
     color: $color-grey;
     padding: 2rem 2.5rem 1rem 2rem;
     border: none;
-    border-bottom: 2px, solid $color-black;
+    border-bottom: 2px solid $color-black;
     background-color: $color-white;
     display: block;
 
@@ -57,6 +57,25 @@ h2 {
     padding: 1.5rem 18rem 1.4rem 2.5rem;
     width: 90%;
   }
+
+  #message {
+    width: 33rem;
+    height: 19rem;
+  }
+
+  .inline {
+    input {
+      display: inline-block;
+      width: auto;
+      margin-right: 1rem;
+    }
+    label {
+      display: inline-block;
+      width: auto;
+      margin-right: 1rem;
+    }
+  }
+
   .form__button {
     display: flex;
     justify-content: center;
