@@ -57,6 +57,11 @@ h2 {
     padding: 1.5rem 18rem 1.4rem 2.5rem;
     width: 90%;
   }
+  .form__button {
+    display: flex;
+    justify-content: center;
+  }
+
   input[type="button"],
   input[type="submit"],
   input[type="reset"] {
@@ -71,5 +76,6 @@ h2 {
     box-sizing: border-box;
     border-radius: 5px;
     bottom: 3.5rem;
+    text-align: center;
   }
 }
