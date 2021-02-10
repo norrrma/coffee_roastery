@@ -64,10 +64,25 @@ h2 {
   }
 
   .inline {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
     input {
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+    }
+
+    span {
       display: inline-block;
-      width: auto;
+      height: 20px;
+      width: 20px;
+      outline: 2px solid $color-black;
+      border-radius: 5px;
       margin-right: 1rem;
+      background-color: $color-white;
     }
     label {
       display: inline-block;
