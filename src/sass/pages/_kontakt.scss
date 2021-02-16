@@ -8,6 +8,36 @@
   }
 }
 
+.nav-form-desktop-li {
+  flex: 2 1 1;
+  a {
+    padding: 1.5rem 3.5rem;
+    display: inline-block;
+
+    &:hover::after {
+      content: "";
+      width: 100%;
+      height: 1px;
+      display: block;
+      background: $color-black;
+      transition: 300ms;
+    }
+
+    //still not working, currents sind überall gesetzt
+    .nav-desktop ul li a.current {
+      content: "";
+      border-bottom: 2px solid;
+      // width: 100%;
+      // height: 1px;
+      display: block;
+    }
+
+    // &:hover::after {
+    //   width: 100%;
+    // }
+  }
+}
+
 main {
   padding: 5%;
 }
