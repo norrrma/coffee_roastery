@@ -83,3 +83,10 @@ html {
 body {
   box-sizing: border-box;
 }
+
+a {
+  &:link,
+  &:visited {
+    text-decoration: none;
+  }
+}

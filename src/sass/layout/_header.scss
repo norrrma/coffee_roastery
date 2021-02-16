@@ -41,9 +41,39 @@
     display: flex;
     justify-content: space-between;
     position: fixed;
+    z-index: 2000;
 
     @include respond(md) {
       display: none;
+    }
+  }
+
+  .show {
+    transform: translateX(-100%);
+  }
+
+  #nav-mobile-black {
+    position: fixed;
+    left: 100%;
+    z-index: 1000;
+
+    transition: transform 500ms ease-in-out;
+
+    height: 100vh;
+    width: 100vw;
+
+    background-color: $color-black;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h3 {
+      margin-left: 6rem;
+      margin-bottom: 2.4rem;
+      a {
+        color: $color-white;
+      }
     }
   }
 
