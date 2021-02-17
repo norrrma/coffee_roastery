@@ -23,7 +23,7 @@
     border-radius: 0rem;
   }
 
-  &_burger_menu {
+  &_menu-button {
     position: fixed;
     right: 2.4rem;
     top: 2rem;
@@ -52,7 +52,7 @@
     transform: translateX(-100%);
   }
 
-  #nav-mobile-black {
+  .nav-mobile-black {
     position: fixed;
     left: 100%;
     z-index: 1000;
